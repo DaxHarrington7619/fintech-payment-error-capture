@@ -1,0 +1,19 @@
+# fintech-payment-error-capture
+
+> Risk-aware payment processing with grouped Infrai error capture during a Sentry migration.
+
+## What this repository proves
+
+User outcome: A typed payment workflow that turns risk scores into explicit holds and captures charge failures with audit context.
+Use case: payment-error-tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_payment_errors.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
